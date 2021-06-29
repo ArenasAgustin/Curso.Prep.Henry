@@ -1,0 +1,80 @@
+>---------------------------------------------------------------------------------------------------------------------<
+
+Variables: las variables son como cajas en las que uno puede guardar información, ya sean números, caracteres, Strings, etc. Las forma de hacer una variable son:
+
+	var nombreDeLaVariable = contenido_de_la_variable
+
+	const nombre_de_la_variable = contenidoDeLaVariable
+
+	let nombreDeLaVariable = contenidoDeLaVariable
+
+La variables de tipo "var" son las mas normales y usadas, las de tipo "let" son similares a las de tipo "var" pero más complejas. Las de tipo "const" son variables constantes y no se puede modificar su contenido una ves asignado.
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Strings: los Strings son cadenas de caracteres, un conjunto de letras, números, espacios y/o símbolos. La forma de hacer un String es:
+
+	var nombreDelString = "contenido"
+
+El contenido de un String va siempre entre comillas simples o comillas dobles.
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Funciones: las funciones son objetos invocables, los culaes al llamar hacen algo. Las formas de llamar a las funciones son:
+
+	function nombre_de_la_funcion (argumentos) {
+		operaciones que hace la funcion...
+	}
+
+    var nombre_de_la_funcion = function (argumentos) {
+		operaciones que hace la funcion...
+	};
+
+    var nombre_de_la_funcion = (argumentos) => {
+		operaciones que hace la funcion...
+	};
+
+Para invocar o llamar a una funcion se usa el nombre de la funcion junto un unos pararenteis para pasarle los argumentos que pide para funcionar.
+
+	nombre_de_la_funcion(argumentos);
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Argumentos: los argumentos son variables o informacion que piden las funciones para hacer algo, una funcion puede pedir varios argumentos, uno o ninguno.
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Return: un return es una operacion que hace una funcion, esta devuelve un valor desde la funcion a donde fue llamada dicha funcion. Por ejemplo:
+
+Teniendo la siguiente funcion:
+
+	function funcionSuma (a,b) {
+		suma = a + b;
+		return suma;
+	}
+
+Puedo invocar la funcion y esta me devolvera un valor:
+
+	var resultado = funcionSuma(2,4);
+
+En este ejemplo el valor que se va a almacenar en la variable resultado es de 6.
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+If: un if es un control de flujo, es dicir si ocurre algo (if) hace sierta cosa, sino (else) hace otra. Se puede armar de la siguiente forma:
+
+	if(operacion_logica){
+		operaciones que hace el if...
+	}else if(otra_operacion_logica){
+		operaciones que hace el else-if...
+	}else{
+		operaciones que hace el else...
+	}
+
+Puede omitirse el else y/o el else-if, ademas de que una dentro de un if, else-if o else se puede armar otra cadena de if-else, esto se llama anidar.
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Booleanos: los booleans o booleanos son un tipo de variable que puede tener solo 2 valores, true (un 1 logico) o false (un 0 logico).
+
+>---------------------------------------------------------------------------------------------------------------------<

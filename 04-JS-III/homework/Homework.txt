@@ -1,0 +1,64 @@
+>---------------------------------------------------------------------------------------------------------------------<
+
+Arrays: los arrays o arreglos son como un tren, la locomotora seria el arreglo y los vagones son las almacenan los valores que le pasamos al array. La forma de hacer una array es:
+
+	var nombreArray = [valor1, valor2, valor3, ..., valorN];
+
+Los valores que puede almacenar son: cadenas/strings, números y booleanos. Y van encerrados entre [].
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+.length: con esta funcion se puede saber cuantos vagones (valores) tiene el array. La forma de hacer el .length es:
+
+	nombreArray.length();
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Elementos del Array: para ver los valores almacenados en el arreglo hay que tener en cuanta que la primera posicion es ¨0¨ y el ultimo elemento esta en la cantidad de elementos menos 1. Por ejemplo:
+
+	var nombreArray = ["Aldy", "Agus", "Mica"];
+	posicion             0 		  1       2
+
+	console.log(nombreArray[0]); // imprime Aldy
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Asignacion: asignarle un nuevo valor. Siguenso el ejemplo anterior 
+
+	nombreArray[0] = ¨Rocio¨;
+
+	console.log(nombreArray[0]); // imprime Rocio
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+.push(): sirve para agregar un valor al final del arreglo. Siguenso el ejemplo:
+
+	nombreArray.push("German");
+
+El arreglo queda ["Rocio", "Agus", "Mica", "German"].
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+.pop(): sirve para eliminar el ultimo elemento del arreglo. Siguenso el ejemplo:
+
+	nombreArray.pop();
+
+El arreglo queda ["Rocio", "Agus", "Mica"].
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+.unshift(): es muy similar a .push() pero coloca el elemento al inico del array. Siguenso el ejemplo:
+
+	nombreArray.unshift("Mari");
+
+El arreglo queda ["Mari", "Rocio", "Agus", "Mica"].
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+.shift(): es muy similar a .pop() pero el primer elemento del array. Siguenso el ejemplo:
+
+	nombreArray.shift();
+
+El arreglo queda ["Rocio", "Agus", "Mica"].
+
+>---------------------------------------------------------------------------------------------------------------------<

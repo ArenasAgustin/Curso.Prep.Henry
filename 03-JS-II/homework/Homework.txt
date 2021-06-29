@@ -1,0 +1,41 @@
+>---------------------------------------------------------------------------------------------------------------------<
+
+For: un for es una estructura de repeticion o un bucle, se repite lo que tenga dentro hasta que no se cumpla la condicion. La forma de hacer un bucle for es:
+
+ 	for(variableDeControl, condicion, variacionDeLaVariable){
+ 		operaciones que hace el bucle...
+ 	}
+
+La variableDeControl es una variable que va cambiando su contenido mientras se cumpla la condicion, cuando no se cumole la condicion se termina el bucle for y se sige con el resto de lineas de codigo. Por ejemplo:
+
+	for(var i = 0, i < 5, i++){
+ 		console.log(i);
+ 	}
+
+En este ejemplo lo que mostrara el codigo es: 01234
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+AND:un AND es una operacion logica de ´y´ ó &&. Se realiza de la siguente forma: 
+
+	(operacionLogicaUno && operacionLogicaDos);
+
+Si ambas operaciones logicas es verdadera la operacion && da como resultado true, si las dos son falsas da como resultado false, y si una de ellas es verdader da false.
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+NOT:un NOT es una operacion logica de ´no´ ó !. Se realiza de la siguente forma: 
+
+	!(operacionLogica);
+
+Si la operacion logica es verdadera la operacion ! da como resultado false, si operacion logica es falsa da como resultado true.
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+OR: un OR es una operacion logica de ´o´ ó ||. Se realiza de la siguente forma: 
+
+	(operacionLogicaUno || operacionLogicaDos);
+
+Si una de las operaciones logicas es verdadera la operacion || da como resultado true, si las dos son falsas da como resultado false, y si ambas son verdaderas da true.
+
+>---------------------------------------------------------------------------------------------------------------------<
