@@ -1,0 +1,31 @@
+>---------------------------------------------------------------------------------------------------------------------<
+
+prototype: son metodos de las clases, a las cuales puede acceder cualquier objeto instanciado de la clase. Los prototype pueden acceder a la palabra clave thisy siempre apuntara al objeto que lo esta llamando. Por ejemplo:
+
+	function Usuario(nombre, bff) {
+	    this.nombre = nombre;
+	    this.bff = bff;
+	}
+
+	Usuario.prototype.introduccion = function(){
+	    return 'Mi nombre es ' + this.nombre + ', mi bff es ' + this.bff + '.';
+	}
+
+	let agus = new Usuario('Agustin', 'Aldana');
+
+	console.log(agus.introduccion());
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Constructor: el constructor como dice la palabra construye y configura un objeto cuando se crea con new. La forma de hacer un constructor de una clase es, por ejemplo:
+
+	function Usuario(nombre, bff) {
+	    this.nombre = nombre;
+	    this.bff = bff;
+	}
+
+	let agus = new Usuario('Agustin', 'Aldana');
+
+Esto crea un nuevo objeto de tipo Usuario que se llama agus, tiene una variable nombre con valor "Agustin" y una variable bff con valor "Aldana"
+
+>---------------------------------------------------------------------------------------------------------------------<

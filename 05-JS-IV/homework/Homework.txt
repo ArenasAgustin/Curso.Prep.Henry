@@ -1,0 +1,49 @@
+>---------------------------------------------------------------------------------------------------------------------<
+
+Objetos: los Objetos son como casilleros donde buscando un nombre de casillero podes acceder a lo que guarda en el. La forma de hacer un Objeto es:
+
+	const nuevoObjeto = {};
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Propiedades: las propiedades o claves son los casilleros del objeto, en ellos se almacena una cadena/String, un numero o un booleano. La forma de hacer objetos con propiedades es:
+
+	const nuevoObjeto = {
+		propiedad1: valor1;
+		propiedad2: valor2;
+		propiedad3: valor3;
+	};
+
+Para agregar una propiedad a un objeto ya realizado se hace asi:
+	
+	otroObjeto[propiedad] = valor;
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+For…in: un bucle 'for...in' este no es como el bucle for, ya que entre parentesis va una variable clave seguida por un in y el objeto. La forma de hacer un bucle 'for...in' es:
+
+	for(let clave in nuevoObjeto){
+		operaciones que hace el bucle...
+	}
+
+>---------------------------------------------------------------------------------------------------------------------<
+
+Notación de puntos vs notación de corchetes: la notacion de punto se usa para acceder a los valores de las propiedades mediante variables. Por ejemplo:
+
+	 const nuevoObjeto = {
+		nombre: "Agus";
+		bff: "Aldy";
+	};
+
+	var clave = "nombre";
+
+	console.log(nuevoObjeto.clave); //imprime Agus
+
+Y la notacion de corchetes se usa para acceder a las propiedades mediante un string o una variable. Por ejemplo:
+
+	var clave = "bff";
+
+	console.log(nuevoObjeto["bff"]); //imprime Aldy
+	console.log(nuevoObjeto[clave]); //imprime Aldy
+
+>---------------------------------------------------------------------------------------------------------------------<
