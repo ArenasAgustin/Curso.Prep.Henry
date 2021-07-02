@@ -10,6 +10,11 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var array = [];
+  for(let clase in objeto){
+    array.push([clase, objeto[clase]])
+  }
+  return array;
 }
 
 
@@ -18,6 +23,31 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  var resultado = {};
+
+  /*var aux = "abcefghijklmnopqrstuvwxyz";
+  var cantidad = 0;
+  for(var i = 0; i < aux.length; i++){
+    for(var f = 0; f < string.length; f++){
+      if(aux[i] === string[f]){
+        cantidad++;
+      }
+    }
+    if(cantidad > 0){
+      resultado.push(aux[i]: cantidad);
+      cantidad = 0;
+    }
+  }*/ //esto no pasa el contador 1 y las letras estan ordenadas por abc
+
+  for(let char in string){
+    if(string[char] in resultado){
+      resultado[string[char]] = resultado[string[char]] + 1;
+    }else{
+      resultado[string[char]] = 1;
+    }
+  }
+
+  return resultado;
 }
 
 
@@ -26,6 +56,17 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var aux = '';
+  var aux2 = '';
+    for(var i = 0; i < s.length; i++){
+      if(s.charAt(i) === s.charAt(i).toLowerCase()){
+        aux2 += s.charAt(i)
+      }else if(s.charAt(i) === s.charAt(i).toUpperCase()){
+        aux += s.charAt(i)
+      }
+    }
+    aux += aux2;
+    return aux;
 }
 
 
@@ -35,6 +76,17 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  var final = "";
+  for(char in str){
+    if(char !== " "){
+      var txt = '';
+      for(var i = str.length - 1; i>=0; i--) {
+        txt += str.charAt(i);
+      }
+      final +=
+    }
+  }
+  return final:
 } 
 
 
